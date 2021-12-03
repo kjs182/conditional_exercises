@@ -1,0 +1,60 @@
+<!doctype html>
+
+<!-- 
+	=========================================
+	
+		Filename: FILENAME.html
+		
+		Author: Kevin Streeter
+		
+		Description: This file will ...
+	
+	=========================================
+-->
+
+<html lang = "en">
+
+	<head>
+	
+		<meta charset = "utf-8">
+		
+		<style>
+			body {
+				background-color: firebrick;
+				color: antiquewhite;
+				text-align: center;
+				margin: auto;
+				padding: 20px;
+			}
+			
+			output {
+				font-size: 3rem;
+			}
+		</style>
+		
+	</head>
+	
+	<body>
+		
+		<p>
+			<output id = "output-display">---</output>
+		</p>
+		
+		<p>
+			<input id = "input-box" placeholder = "Enter Text" onkeypress = "echo()" />
+		</p>
+		
+		<script>
+			
+			function echo(){
+				// This function will check the input box and write it to the output.
+				
+					let currentValue = document.getElementById('input-box').value;
+					
+					document.getElementById('output-display').innerHTML = currentValue;
+			}
+		</script>
+		
+	</body>
+	
+<html>
